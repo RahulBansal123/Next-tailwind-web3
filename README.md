@@ -1,16 +1,21 @@
 <h2 align="center">Next.js Tailwind Web3 template</h2>
 
-<p align="center"><b>⚡ Next.js + Tailwind + Redux + web3 ultimate starter template </b></p>
+<p align="center"><b>⚡ Next.js + Tailwind + Truffle + Redux + web3 ultimate starter template </b></p>
 
 This is a basic Ethereum dapp that uses Next.js and Tailwind with Redux integration. This repository also includes a custom metamask login with the functionality to deploy the smart contracts on the polygon mumbai chain.
 
 ### Quick start
 
 The first things you need to do is clone repo.
+```bash
+git clone https://github.com/RahulBansal123/Next-tailwind-web3
+```
 
 To deploy contracts on polygon testnet:
 
+```bash
 Create .secret at the root of your project with your private key
+```
 
 Now run the following commands:
 
