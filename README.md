@@ -18,11 +18,11 @@ To deploy contracts on polygon testnet:
 Create .secret at the root of your project with your private key
 ```
 
-Obtain alchemy wss//: provider link for polygon testnet
+Obtain alchemy wss//: provider link for polygon testnet<br/>
+Now save this key in truffle-config.js as:
 
 ```bash
-Now save this key in truffle.config.js as:
-const ALCHEMY_KEY = <YOUR ALCHEMY KEY>;
+const ALCHEMY_KEY = "YOUR ALCHEMY KEY";
 ```
 
 Now run the following commands:
