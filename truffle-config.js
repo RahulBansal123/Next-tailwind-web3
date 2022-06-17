@@ -2,6 +2,8 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 const fs = require('fs');
 const secret = fs.readFileSync('.secret').toString().trim();
 
+const ALCHEMY_KEY = '';
+
 module.exports = {
   networks: {
     development: {
@@ -9,12 +11,8 @@ module.exports = {
       port: 7545,
       network_id: '*',
     },
-    matic: {
-      provider: () =>
-        new HDWalletProvider(
-          secret,
-          'wss://polygon-mumbai.g.alchemy.com/v2/81Ukcrc-ssx6X2XmBic6edrY_q9kEOp-'
-        ),
+    mumbai: {
+      provider: () => new HDWalletProvider(secret, ALCHEMY_KEY),
       network_id: 80001,
       confirmations: 2,
       timeoutBlocks: 200,

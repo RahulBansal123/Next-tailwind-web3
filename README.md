@@ -7,6 +7,7 @@ This is a basic Ethereum dapp that uses Next.js and Tailwind with Redux integrat
 ### Quick start
 
 The first things you need to do is clone repo.
+
 ```bash
 git clone https://github.com/RahulBansal123/Next-tailwind-web3
 ```
@@ -17,11 +18,18 @@ To deploy contracts on polygon testnet:
 Create .secret at the root of your project with your private key
 ```
 
+Obtain alchemy wss//: provider link for polygon testnet
+
+```bash
+Now save this key in truffle.config.js as:
+const ALCHEMY_KEY = <YOUR ALCHEMY KEY>;
+```
+
 Now run the following commands:
 
 ```bash
 yarn add -g truffle
-truffle deploy --network=matic --reset
+truffle deploy --network=mumbai --reset
 ```
 
 Run the client
