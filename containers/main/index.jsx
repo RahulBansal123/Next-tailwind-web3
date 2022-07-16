@@ -10,7 +10,11 @@ const Main = ({ account }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="container py-4 flex flex-col md:flex-row"></div>
+      <div className="container py-4 flex flex-col md:flex-row">
+        <h1 className="text-center text-xl w-full">
+          Welcome to the NextJS + Truffle + TailwindCSS template{' '}
+        </h1>
+      </div>
     </div>
   );
 };
